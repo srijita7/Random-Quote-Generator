@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    background-image: linear-gradient(to right bottom, rgb(149, 255, 128), #ffedbca8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 10px;
+    color: rgb(15, 85, 6);
+}
+.fa-quote-left, .fa-quote-right {
+    font-size: 35px;
+    color: rgb(72, 11, 121);
+}
+.quote
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.author 
+{
+    margin:10px;
+    text-align: right;
+    font-size: 25px;
+    font-style: italic;
+    font-family: cursive;
+}
+hr {
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid rgb(226, 216, 216);
+    background-color: rgb(209, 223, 206);
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+.twitter
+{
+    border:1px solid rgb(102, 179, 255);
+    border-radius: 4px;
+    background-color: rgb(102, 179, 255);
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    width: 60px;
+    height: 35px;
+    line-height: 40px;
+    overflow: hidden;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    white-space: nowrap;
+}
+.twitter:hover
+{
+    border:1px solid rgb(102, 179, 255);
+    border-radius: 4px;
+    background-color: rgb(18, 123, 235);
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    width: 120px;
+    height: 35px;
+    line-height: 40px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    text-decoration: none;
+}
+.twitter:hover::after 
+{
+  content: ' Tweet';
+}
+.next
+{
+    font-size: 1.3em;
+    height: 35px;
+    width: 30%;
+    border-radius: 5px;
+    cursor:pointer;
+    font-weight: bold;
+    color: rgb(15, 85, 6);
+    background-image: linear-gradient(to right bottom, rgb(88, 179, 151), #ffedbca8);
+    padding: 2px;
+    border-style: none;
+}
+.next:hover
+{
+    transform: scale(1.1);
+    background-image: linear-gradient(to right bottom, rgb(152, 199, 185), #ffedbcee);
+    box-shadow: 0 10px 10px rgb(25, 82, 2);
+}
+.container:hover
+{
+    box-shadow: 0 10px 10px rgb(34, 112, 3);
+}
